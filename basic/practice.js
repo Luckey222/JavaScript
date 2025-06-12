@@ -15,8 +15,8 @@ const anotherString=newstring.slice(-8,4)
 console.log(anotherString);
 
 */
-// const hundreds=5000000
-// console.log(hundreds.toLocaleString('en-IN'));
+const hundreds=5000000
+console.log(hundreds.toLocaleString('en-IN'));
 
 
 
