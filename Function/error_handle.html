@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("Enter the first number: "));
+        let b=parseInt(prompt("Enter the second number: "));
+        function sum(a,b)
+        {
+            if(isNaN(a)||isNaN(b))
+            {
+                return "Error: Please enter the valid number";
+            }
+            return a+b;
+        }
+       let result=sum(a,b);
+       if(typeof result==="string")
+       {
+        document.write(result);
+       }
+       else
+       {
+        document.write(`The sum of ${a} and ${b} is ${result}`);
+       }
+
+    </script>
+</body>
+</html>

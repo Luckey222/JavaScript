@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palindrome(num)
+        {
+            let s=num;
+            let a;
+            let b=0;
+            while(num>0)
+            {
+            a=num%10;
+            b=b*10+a;
+            num=Math.floor(num/10);
+            }
+            if(b===s)
+            {
+                document.write(s+" is palindrome");
+            }
+            else
+            {
+                document.write(s+" not a palindrome");
+            }
+        }
+        palindrome(165)
+    </script>
+</body>
+</html>

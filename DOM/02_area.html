@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    length: <input type="text"id="l"placeholder="Enter the Length"><br><br>
+    breadth: <input type="text"id="b"placeholder="Enter the Breadth"><br><br>
+    <button id="btn">Calculate</button>
+    <p id="Output"></p>
+    <script>
+        let l=document.querySelector("#l");
+        let b=document.querySelector("#b");
+        let button=document.querySelector("#btn");
+        let Output=document.querySelector("#Output");
+        button.addEventListener("click", function(){
+        let length=Number(l.value);
+        let breadth=Number(b.value);
+        let area=length*breadth;
+        Output.innerHTML=
+            `The area of a room is ${area}`;
+        });
+    </script>
+</bod   
+</html>

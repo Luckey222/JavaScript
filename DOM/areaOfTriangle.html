@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    first side:<input type="text"id="a"placeholder="Enter the first side"><br><br>
+    second side:<input type="text"id="b"placeholder="Enter the second side"><br><br>
+    Third side: <input type="text"id="c"placeholder="Enter the Third side"><br><br>
+    <button id="btn">calculate</button>
+    <p id="result"></p>
+<script>
+            let A=document.querySelector("#a");
+            let B=document.querySelector("#b");
+            let C=document.querySelector("#c");
+            let button=document.querySelector("#btn");
+            let output= document.querySelector("#result");
+            button.addEventListener("click",()=>
+            {
+                let a=Number(A.value);
+                let b=Number(B.value);
+                let c=Number(C.value);
+                let s=(a+b+c)/2;
+                let Area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+                output.innerHTML=`The area of a triangle is ${Area}`;
+            });
+        </script>
+</body>
+</html>

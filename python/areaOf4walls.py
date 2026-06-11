@@ -1,0 +1,5 @@
+l=int(input("enter length:"))
+b=int(input("enter breadth:"))
+h=int(input("Enter the height"))
+area=2*h*(l+b)
+print(f"The area of a 4 walls is {area}")

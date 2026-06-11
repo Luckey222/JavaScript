@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    length:<input type="text"id="l"placeholder="Enter a length"><br><br>
+    breadth:<input type="text"id="b"placeholder="Enter breadth"><br><br>
+    <button onclick="area()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function area()
+        {
+            let l=Number(document.getElementById("l").value);
+            let b=Number(document.getElementById("b").value);
+            let Area=l*b;
+            document.getElementById("result").innerHTML=
+            "The area of a room is: "+Area;
+        }
+    </script>
+</body>
+</html>

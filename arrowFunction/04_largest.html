@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("Enter the first number: "))
+        let b=parseInt(prompt("Enter the Second number"));
+        let c =parseInt(prompt("Enter the third number"));
+        let largest=(a,b,c)=>
+        {
+            if(isNaN(a)||isNaN(b)||isNaN(c))
+            {
+                return`Error: Please enter the valid number`
+            }
+            else{
+            if (a>=b &&a>=c)
+            {
+                return `${a} is the largest among ${a}, ${b}, ${c}`
+            }
+          else if (b>=a && b>=c)
+            {
+                return `${b} is the largest among ${a}, ${b}, ${c}`
+            }
+            else{
+        return `${c} is the largest among ${a}, ${b}, ${c}`
+        }
+        }
+    }
+        let result=largest(a,b,c);
+        document.write(result);
+    </script>
+</body>
+</html>

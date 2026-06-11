@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt("Enter first number "));
+        let b=parseInt(prompt("Enter second number "));
+        let c=parseInt(prompt("Enter third number "));
+    
+        let add=(a,b,c)=>a+b+c;
+        let smallest=(a,b,c)=>
+        {
+                let small;
+            if(a<b&&a<c)
+            {
+                small=a;
+            }
+            else if (b<a&&b<c)
+            {
+                small=b;
+            }
+            else{
+                small=c;
+            }
+            return small;
+        }
+     let sum=add(a,b,c);
+      let min=smallest(a,b,c);
+        document.write(`${sum} is the sum of ${a},${b} and ${c}`);
+       document.write ("<br>")
+        document.write(`${min} is the smallest number among ${a},${b} and ${c}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function test()
+{
+    try {
+    let a = Number(prompt("Enter number"));
+        let b = Number(prompt("Enter number"));
+            if ( a===""||b==="") 
+            {
+            throw "Field must not be empty !";
+        }
+        if (isNaN(a) || isNaN(b)) {
+            throw "Not a number!";
+        }
+       
+
+        alert(a + b);
+
+    } catch (error) {
+        document.write("Error: " + error);
+    }
+}
+test();
+  </script>
+</body>
+</html>

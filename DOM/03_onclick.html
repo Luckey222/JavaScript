@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    num1:<input type="text"id="a"placeholder="Enter the first number"><br><br>
+    num2:<input type="text"id="b"placeholder="Enter the Second number"><br><br>
+    <button onclick="add()">calculate</button>
+    <p id="result"></p>
+    <script>
+      
+        function add(){
+        let a=Number(document.getElementById("a").value);
+        let b=Number(document.getElementById("b").value);
+        let sum=a+b;
+        document.getElementById("result").innerHTML=
+        `The sum of ${a} and ${b} is ${sum}`
+        }
+         
+         
+    </script>
+</body>
+</html>

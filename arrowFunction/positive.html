@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=parseInt(prompt("Enter a number"));
+        let check=(num)=>
+        {
+            if(num>0)
+            {
+               return `${num} is positive number `;
+            }
+            else if(num<0)
+            {
+                return `${num} is negative number `;
+            }
+            else
+            {
+                return `${num} is equal to zero`;
+            }
+
+        }
+      let result= check(num);
+      document.write(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a=parseInt(prompt("Enter a first number"));
+       let b=parseInt(prompt("Enter a second number"));
+        function modulus(a,b)
+        {
+            if(isNaN(a)||isNaN(b))
+            {
+                return "Error: Please enter the valid number:"
+            }
+          
+            return  a%b; 
+        }
+
+
+
+        let result= modulus(a,b);
+
+
+        if(typeof result==="string")
+        {
+            document.write(result);
+        }
+        else{
+        document.write(`The remainder of ${a} % ${b} is ${result}`);
+        }
+    </script>
+</body>
+</html>

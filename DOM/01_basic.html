@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    principle: <input type="text"id="p"placeholder="Enter the principle amount"required><br><br>
+    Rate: <input type="text"id="r"placeholder="Enter the rate of interest"required><br><br>
+    Time: <input type="text"id="t"placeholder="Enter the time period"required><br><br>
+    <button onclick="calculate()">calculate</button>
+    <p id="Result"></p>
+    <script>
+        function calculate()
+        {
+            let p=Number(document.getElementById("p").value);
+            let t=Number(document.getElementById("t").value);
+            let r=Number(document.getElementById("r").value);
+            if(p===0|| t===0|| r===0)
+            {
+                document.getElementById("Result").innerHTML=
+                `Error: Please enter the valid number`
+                return;
+            }
+
+            else if(isNaN(p)||isNaN(t)||isNaN(r))
+            {
+                document.getElementById("Result").innerHTML=
+                `Error: Please enter the valid number`
+                return;
+            }
+            else
+            {
+            let si=(p*t*r)/100;
+            document.getElementById("Result").innerHTML=
+            `The simple intrest ${p}, ${t} and ${r} is ${si}`;
+            }
+        }
+    </script>
+</body>
+</html>

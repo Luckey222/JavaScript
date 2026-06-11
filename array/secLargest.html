@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [15,31,8,9,4,6,12,18,17,11,21,25,28];
+        let largest=-Infinity;
+        let second=-Infinity;
+        let third=-Infinity;
+        for(let i=0;i<num.length;i++)
+        {
+            if (num[i]>largest)
+            {
+                third=second
+                second=largest;
+                largest=num[i];
+            }
+            else if(num[i]>second && num[i]!==largest)
+            {
+                third=second;
+                second=num[i];
+            }
+            else if (num[i]>third && num[i]!==second&&num[i]!==largest)
+            {
+                third=num[i];
+            }                
+        }
+        document.write(third+"  is the third largest number in the array");
+
+    </script>
+</body>
+</html>
